@@ -3,7 +3,7 @@ name: Publish Runner Image
 on:
   push:
     paths:
-    - runner_version
+      - runner_version
   workflow_dispatch:
     inputs:
       runnerVersion:
