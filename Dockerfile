@@ -27,8 +27,9 @@ RUN adduser \
 	--uid "1000" \
 	"$USER" && \
 	chown -R "$USER:$USER" /home/runner
-RUN addgroup "$USER" wheel
-RUN echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/wheel-without-password
+
+# RUN addgroup "$USER" wheel
+# RUN echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/wheel-without-password
 
 
 
